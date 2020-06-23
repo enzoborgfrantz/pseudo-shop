@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": ""
+    "test": "example"
   },
   "dependencies": {
     "next": "9.4.4",
