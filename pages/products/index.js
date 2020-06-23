@@ -24,7 +24,10 @@ export default ({ products }) => (
     <h1>catalogue</h1>
     {Object.entries(products).map(([key, value]) => (
       <>
-        <Link href={`/products/${key}`}>{value.title}</Link>
+        <Link
+          href="/products/[productId]"
+          as={`/products/${value.id}`}
+        >{`${value.title}: ${value.id}`}</Link>
         <br />
       </>
     ))}

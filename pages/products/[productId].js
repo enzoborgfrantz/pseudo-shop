@@ -3,8 +3,6 @@ import Link from "next/link";
 import Page from "../components";
 
 export async function getStaticProps(context) {
-  console.log("context: ", context);
-  // const router = useRouter();
   const { productId } = context.params;
 
   return {
@@ -19,7 +17,7 @@ export async function getStaticPaths() {
   // can do a fetch here to get list of possible product Id's
 
   return {
-    paths: [{ params: { productId: "0" } }, { params: { productId: "1" } }],
+    paths: [{ params: { productId: "1" } }, { params: { productId: "2" } }],
     fallback: true,
   };
 }
