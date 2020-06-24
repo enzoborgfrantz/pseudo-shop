@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 export default ({ products }) => (
   <Page title="Catalogue">
-    <h1>catalogue</h1>
+    <h1>Catalogue</h1>
     {Object.entries(products).map(([key, value]) => (
       <>
         <Link
