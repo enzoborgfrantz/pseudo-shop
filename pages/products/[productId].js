@@ -8,7 +8,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       productId,
-      content: "some content for: " + productId,
+      content: "Some content for: " + productId,
     },
   };
 }
