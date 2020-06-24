@@ -1,3 +1,5 @@
+# pseudo-shop 🛍️
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Running the project
@@ -33,8 +35,9 @@ git remote set-url --add --push origin git@github.com:enzoborgfrantz/pseudo-shop
 > Note the [user] and [ip] values should be replaced with the server user name and the server public ip
 
 More information about how this setup was achieved can be found [here](https://macarthur.me/posts/deploying-code-with-a-git-hook)
-
-The code for the `post-receive` githook is as follows
+<details>
+    <summary>post-receive git hook code</summary>
+<p>
 
 ```bash
 #!/bin/bash
@@ -71,3 +74,5 @@ do
    npm run start
 done
 ```
+</p>
+</details>
